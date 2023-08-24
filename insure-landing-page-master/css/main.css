@@ -204,3 +204,57 @@ footer .top {
 .footer li.grayy {
   margin-bottom: 1em !important;
 }
+
+.close {
+  width: 3em;
+  display: none;
+}
+
+.nav {
+  z-index: 2;
+  position: relative;
+  height: 64em;
+  padding: 2em;
+  background-color: #211c32;
+  text-align: center;
+  padding-top: 5em;
+  background-size: 50em;
+  background-repeat: no-repeat;
+  background-position-y: 35em;
+  background-position-x: 0em;
+  background-image: url(../images/bg-pattern-mobile-nav.svg);
+  display: none;
+}
+
+.nav nav {
+  display: block;
+}
+
+.nav nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.nav nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.nav button {
+  background-color: #211c32;
+  color: white;
+  border: 1.5px solid white;
+  padding: 0.7em 6em;
+  margin-top: 2em;
+  margin-left: 3em;
+}
+
+.open {
+  display: block !important;
+}
+
+.closed {
+  display: none;
+}

@@ -191,6 +191,10 @@ footer .top {
   margin-bottom: 2em;
 }
 
+.borderrr {
+  display: none;
+}
+
 .footer ul {
   display: flex;
   flex-direction: column;
@@ -257,4 +261,140 @@ footer .top {
 
 .closed {
   display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+    margin-bottom: -8em;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul li a {
+    color: gray;
+    text-decoration: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  header .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .view {
+    color: black;
+    border: 1.5px solid black;
+    padding: 0.7em 1.5em;
+  }
+
+  section.hero {
+    position: relative;
+    z-index: 3;
+    top: -48em;
+  }
+
+  section.intro {
+    position: relative;
+    z-index: 4;
+    top: 10em;
+    right: -20em;
+    right: -40em;
+  }
+
+  section.hero .wrapper {
+    text-align: start;
+    padding-left: 10em;
+    border-top: 1px solid white;
+    background-image: url(../images/bg-pattern-intro-left-desktop.svg),
+      url(../images/bg-pattern-intro-right-desktop.svg);
+    background-position-y: 15em, 0em;
+    background-position-x: 0, 125em;
+    background-size: auto, 30em;
+  }
+
+  section.hero .wrapper h1 {
+    margin-left: 0;
+    padding-right: 10.5em;
+  }
+  section.hero .wrapper p {
+    margin-left: 0;
+    padding-right: 15em;
+  }
+
+  .borderrr {
+    display: block;
+    height: 1em;
+    width: 15em;
+    border-top: 1px solid gray;
+    margin: 0;
+    margin-bottom: 3em;
+  }
+
+  section.features {
+    margin-top: -50em;
+  }
+
+  section.features .wrapper h1 {
+    margin-left: -27.5em;
+  }
+
+  .border {
+    margin-left: -109em;
+  }
+
+  section.features .wrapper .feature {
+    flex-direction: row;
+    text-align: start;
+  }
+
+  section.how-we-work .wrapper {
+    width: 90em;
+    height: 20em;
+    display: flex;
+    background-size: 35em;
+    background-position-x: 61em;
+    background-position-y: 0em;
+    background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+  }
+  section.how-we-work .wrapper h1 {
+    margin-right: 5em;
+    text-align: start;
+  }
+
+  section.how-we-work .wrapper a {
+    margin-left: -20em;
+  }
+
+  footer {
+    margin-top: 10em;
+    background-position-y: 10em;
+  }
+
+  footer .top {
+    display: flex;
+    margin-left: 27em;
+    gap: 65em;
+  }
+
+  footer .bottom {
+    display: flex;
+    margin-left: 27em;
+    gap: 20em;
+    border-top: 1px solid black;
+    margin-right: 28em;
+    padding-top: 3em;
+  }
 }
